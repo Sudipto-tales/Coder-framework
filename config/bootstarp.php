@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/framework.php';
+require_once __DIR__ . '/db.php';
+require_once 'Mailer.php';
+require_once 'Auth.php';
 
 
 // Function to load view files dynamically
