@@ -2,9 +2,11 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/framework.php';
 require_once __DIR__ . '/db.php';
-require_once 'Mailer.php';
-require_once 'Auth.php';
 
+// Load all core files dynamically
+foreach (glob(__BASEDIR__ . '/core/*.php') as $filename) {
+    require_once $filename;
+}
 
 // Function to load view files dynamically
 function load_view($path, $data = []) {

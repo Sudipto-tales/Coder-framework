@@ -20,7 +20,7 @@
         <h2>Welcome to Coder framework</h2>
         <p>The Web framework for perfectionists with deadlines.</p>
     </div>
-    <?php load_view('includes/footer.php'); ?>
+    <?php load_view('resources/layouts/footer.php'); ?>
 </body>
 
 </html>
